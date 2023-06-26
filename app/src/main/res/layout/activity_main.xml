@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/my_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/my_tab_layout"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        app:tabPadding="-20dp"
+        android:background="@color/white"
+        app:tabIndicatorAnimationDuration="@integer/material_motion_duration_short_2"
+        android:layout_marginTop="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="0dp"
+        app:tabUnboundedRipple="true" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_1"
+        android:layout_width="304dp"
+        android:layout_height="66dp"
+        app:cornerRadius="13dp"
+        android:textSize="17sp"
+        android:textAllCaps="false"
+        android:text="Ro'yhaddan o'tish"
+        android:elevation="15dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_tab_layout" />
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="304dp"
+        android:layout_height="66dp"
+        android:elevation="15dp"
+        app:cornerRadius="13dp"
+        android:layout_marginTop="5dp"
+        android:alpha="0.2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
